@@ -75,45 +75,50 @@
             <div class="container mid">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Sign up</h1>
-                    <form action="index.html">
+                    <form action="index.html" onsubmit="return validatePassword()">
 
                     <div class="mid col-md-12">
                         <div class="wow fadeInUp" data-wow-delay="0.5s">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="username" placeholder="username">
+                                        <input type="text" class="form-control" id="username" placeholder="username" required>
                                         <label for="username">Username</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="username" placeholder="name">
+                                        <input type="text" class="form-control" id="username" placeholder="name" required>
                                         <label for="username">Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="email">
+                                        <input type="email" class="form-control" id="email" placeholder="email" required>
                                         <label for="email">Email</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="number" placeholder="mobibe number">
+                                        <input type="text" class="form-control" id="number" placeholder="mobibe number" required>
                                         <label for="number">Mobile number</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="password" class="form-control" id="password" placeholder="Password">
+                                        <input type="password" class="form-control" id="password" placeholder="Password" required>
                                         <label for="password">Password</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="password" class="form-control" id="cpassword" placeholder="Confirm password">
+                                        <input type="password" class="form-control" id="cpassword" placeholder="Confirm password" required>
                                         <label for="cpassword">Confirm password</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating" style="text-align: center;">
+                                        <span id="passwordmatch"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
